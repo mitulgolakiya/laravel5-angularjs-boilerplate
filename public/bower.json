@@ -1,0 +1,28 @@
+{
+  "name": "laravel5-angularjs-boilerplate",
+  "version": "0.0.1",
+  "authors": [
+    "Mitul Golakiya <me@mitul.me>"
+  ],
+  "description": "Bolierplate for Laravel5 & AngularJS Development",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.13",
+    "angular-ui-router": "~0.2.13",
+    "bootstrap": "~3.3.2",
+    "font-awesome": "~4.3.0"
+  }
+}
