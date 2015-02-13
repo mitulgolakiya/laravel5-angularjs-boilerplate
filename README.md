@@ -1,13 +1,33 @@
 # Laravel5 & AngularJS Boilerplate
 Boilerplate for Laravel5 &amp; AngularJS Development
 
-# Included Packages (Backend - PHP)
+## Included Backend Packages
 * Laravel
 * barryvdh/laravel-ide-helper
 
-# Included Packages (Frontend - Bower)
+## Included Frontend Bower Packages
 
 * angular
 * angular-ui-router
 * bootstrap
 * font-awesome
+
+## Custom Libraries
+* Constants file [a link](app/Libraries/Mitul/Constants/Constants.php) - Can be used as default constants of your app, no need to setup a new constants file
+* CommonAppUtils [a link](app/Libraries/Mitul/Utils/CommonAppUtils.php) - Common Util/Helper functions like castObject, makeAssocArrOfObjectsByField etc. and can be added more.
+* Response Manager [a link](app/Libraries/Mitul/Utils/ResponseManager.php) - Response Manager to setup a response structure for API calls
+
+## Installation
+
+Here are the steps to get started:
+
+* Clone this repository - `git clone`
+* Run composer update command `composer install`
+
+And you are ready to go. !! :)
+
+## Credits
+
+This Boilerplate is created by [Mitul Golakiya](https://github.com/mitulgolakiya).
+
+

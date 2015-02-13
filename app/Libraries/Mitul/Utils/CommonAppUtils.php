@@ -12,18 +12,6 @@ namespace App\Libraries\Mitul\Utils;
 class CommonAppUtils
 {
 	/**
-	 * Returns UUID of 32 characters
-	 *
-	 * @return string
-	 */
-	public static function generateUUID()
-	{
-		$currTime = (string)microtime(true);
-		$randNum = (string)rand(10000, 1000000);
-		$shuffledStr = str_shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
-		return md5($currTime.$randNum.$shuffledStr);
-	}
-	/**
 	 * Casts values of input as given rules
 	 *
 	 * @param array $castRules

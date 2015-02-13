@@ -3,3 +3,4 @@
 .env.php
 /vendor
 /public/vendor
+_ide_helper.php
