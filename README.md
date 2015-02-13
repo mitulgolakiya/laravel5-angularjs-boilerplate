@@ -13,16 +13,18 @@ Boilerplate for Laravel5 &amp; AngularJS Development
 * font-awesome
 
 ## Custom Libraries
-* Constants file [a link](app/Libraries/Mitul/Constants/Constants.php) - Can be used as default constants of your app, no need to setup a new constants file
-* CommonAppUtils [a link](app/Libraries/Mitul/Utils/CommonAppUtils.php) - Common Util/Helper functions like castObject, makeAssocArrOfObjectsByField etc. and can be added more.
-* Response Manager [a link](app/Libraries/Mitul/Utils/ResponseManager.php) - Response Manager to setup a response structure for API calls
+* [Constants file](app/Libraries/Mitul/Constants/Constants.php) - Can be used as default constants of your app, no need to setup a new constants file
+* [CommonAppUtils](app/Libraries/Mitul/Utils/CommonAppUtils.php) - Common Util/Helper functions like castObject, makeAssocArrOfObjectsByField etc. and can be added more.
+* [Response Manager](app/Libraries/Mitul/Utils/ResponseManager.php) - Response Manager to setup a response structure for API calls
 
 ## Installation
 
 Here are the steps to get started:
 
 * Clone this repository - `git clone`
-* Run composer update command `composer install`
+* Run composer install command `composer install`
+* Run bower update in public directory
+
 
 And you are ready to go. !! :)
 
