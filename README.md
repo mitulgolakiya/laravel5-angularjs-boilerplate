@@ -21,9 +21,9 @@ Boilerplate for Laravel5 &amp; AngularJS Development
 
 Here are the steps to get started:
 
-* Clone this repository - `git clone`
+* Clone this repository with `git clone`
 * Run composer install command `composer install`
-* Run bower update in public directory
+* Run bower update in public directory `bower update`
 
 
 And you are ready to go. !! :)
