@@ -7,6 +7,7 @@ namespace App\Libraries\Utils;
  * Common app Utils
  *
  * Class CommonAppUtils
+ *
  * @package Mitul\Utils
  */
 class CommonAppUtils
@@ -34,21 +35,36 @@ class CommonAppUtils
 			}
 		}
 	}
+
 	/**
 	 * Makes associative array of given array objects for given field
 	 *
-	 * @param array $arr
-	 * @param string $field
+	 * @param array       $arr
+	 * @param string      $field
+	 * @param null|string $singleField
+	 *
 	 * @return array
 	 */
-	public static function makeAssocArrOfObjectsByField($arr, $field)
+	public static function makeAssocArrOfObjectsByField($arr, $field, $singleField = null)
 	{
 		$assocArr = array();
 		foreach($arr as $arrObj)
 		{
-			if(isset($arrObj[$field]))
-				$assocArr[$arrObj[$field]] = $arrObj;
+			if(!isset($arrObj[$field]))
+				continue;
+
+			if($singleField)
+			{
+				if(isset($arrObj[$singleField]))
+				{
+					$assocArr[$arrObj[$field]] = $arrObj[$singleField];
+					continue;
+				}
+			}
+
+			$assocArr[$arrObj[$field]] = $arrObj;
 		}
+
 		return $assocArr;
 	}
 }
